@@ -1,6 +1,8 @@
 # LearnAngularTry1
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+This project is created based on the [Tour of Heroes](https://angular.io/tutorial/toh-pt0) tutorial
+
+The project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
 ## Development server
 

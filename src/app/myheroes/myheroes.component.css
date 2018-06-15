@@ -34,7 +34,7 @@
 .heroesList__item_notSelected:hover {
   color: #607D8B;
   background-color: #DDD;
-  left: 1em;
+  left: .1em;
 }
 
 /* heroesList__item__badge */

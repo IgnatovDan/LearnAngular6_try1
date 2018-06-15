@@ -21,9 +21,6 @@
 
 .heroesList__item_selected {
   background-color: #CFD8DC;
-}
-.heroesList__item_selected:hover {
-  background-color: #BBD8DC;
   color: white;
 }
 .heroesList__item_notSelected {

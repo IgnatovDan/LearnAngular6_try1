@@ -16,20 +16,18 @@
   padding: .3em 0;
   height: 1.6em;
   border-radius: 4px;
+  color: #888;
 }
 
 .heroesList__item_selected {
   background-color: #CFD8DC;
-  color: white;
 }
 .heroesList__item_selected:hover {
   background-color: #BBD8DC;
   color: white;
 }
-
 .heroesList__item_notSelected {
   background-color: #EEE;
-  color: white;
 }
 .heroesList__item_notSelected:hover {
   color: #607D8B;

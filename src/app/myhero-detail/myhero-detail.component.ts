@@ -11,7 +11,6 @@ export class MyheroDetailComponent implements OnInit {
   @Input() hero: MyHero;
 
   constructor() {
-    debugger;
   }
 
   ngOnInit() {

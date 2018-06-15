@@ -26,6 +26,9 @@
   background-color: #CFD8DC;
   color: white;
 }
+.heroesList__item_selected:hover {
+  background-color: #BBD8DC;
+}
 
 .heroesList__item_notSelected {
   background-color: #EEE;

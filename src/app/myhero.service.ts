@@ -9,12 +9,14 @@ import { MymessageService } from './mymessage.service';
 })
 export class MyheroService {
 
+  getHeroesAsyncCounter: number = 0;
   constructor(private messageService: MymessageService) { }
   /*getHeroes(): MyHero[] {
     return HEROES;
   }*/
   getHeroesAsync(): Observable<MyHero[]> {
-    this.messageService.add('> getHeroesAsync');
+    this.getHeroesAsyncCounter++;
+    this.messageService.add('> getHeroesAsync, call count: ' + this.getHeroesAsyncCounter);
     return of(HEROES);
   }
 }

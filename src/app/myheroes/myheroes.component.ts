@@ -10,7 +10,6 @@ import { MyheroService } from '../myhero.service';
 
 export class MyheroesComponent implements OnInit {
 
-  selectedHero : MyHero;
   heroes: MyHero[];
 
   constructor(private myheroService: MyheroService) { 
@@ -18,11 +17,6 @@ export class MyheroesComponent implements OnInit {
 
   ngOnInit() {
     this.myheroService.getHeroesAsync().subscribe(value => this.heroes = value);
-    //this.heroes = this.myheroService.getHeroesAsync();
-    //this.selectedHero = this.heroes[1];
-  }
-  onSelect(hero: MyHero): void {
-    this.selectedHero = hero;
   }
 
 }

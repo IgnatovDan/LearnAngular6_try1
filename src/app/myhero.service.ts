@@ -10,13 +10,22 @@ import { MymessageService } from './mymessage.service';
 export class MyheroService {
 
   getHeroesAsyncCounter: number = 0;
+  getHeroAsycCounter: number = 0;
   constructor(private messageService: MymessageService) { }
   /*getHeroes(): MyHero[] {
     return HEROES;
   }*/
   getHeroesAsync(): Observable<MyHero[]> {
     this.getHeroesAsyncCounter++;
-    this.messageService.add('> getHeroesAsync, call count: ' + this.getHeroesAsyncCounter);
+    this.messageService.add(`> getHeroesAsync, call count: ${this.getHeroesAsyncCounter}`);
     return of(HEROES);
+  }
+  // getHero(id: number) {
+  //   return HEROES.find(item => item.id === id);
+  // }
+  getHeroAsync(id: number) {
+    this.getHeroAsycCounter++;
+    this.messageService.add(`> getHeroAsync, id: ${id}, call count: ${this.getHeroAsycCounter}`);
+    return of(HEROES.find(item => item.id === id));
   }
 }

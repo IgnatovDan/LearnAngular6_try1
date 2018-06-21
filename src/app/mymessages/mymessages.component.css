@@ -1,0 +1,34 @@
+.header {
+  color: red;
+}
+
+.clearButton {
+  color: #888;
+  margin-bottom: 12px;
+  font-family: Arial;
+  background-color: #eee;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer; 
+  /* cursor: hand; */
+}
+.clearButton:hover {
+  background-color: #cfd8dc;
+}
+
+/* body {
+  margin: 2em;
+}  */
+
+/* body, input[text], button {
+  color: crimson;
+  font-family: Cambria, Georgia;
+} */
+
+/*.button:disabled {
+  background-color: #eee;
+  color: #aaa;
+  cursor: auto;
+}*/
+

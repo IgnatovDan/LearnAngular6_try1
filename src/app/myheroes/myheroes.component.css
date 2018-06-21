@@ -17,15 +17,10 @@
   height: 1.6em;
   border-radius: 4px;
   color: #888;
+  background-color: #EEE;
 }
 .heroesList__item:hover {
   left: .1em;
-}
-
-.heroesList__item_notSelected {
-  background-color: #EEE;
-}
-.heroesList__item_notSelected:hover {
   color: #607D8B;
   background-color: #DDD;
 }

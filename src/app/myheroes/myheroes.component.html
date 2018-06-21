@@ -1,7 +1,7 @@
 <h2>My Heroes</h2>
 <ul class="heroesList">
   <li *ngFor="let currentHero of heroes" 
-    class="heroesList__item">
+    class="heroesList__item heroesList__item_notSelected">
     <a routerLink="/hero/{{currentHero.id}}">
       <span class="heroesList__item__badge">{{currentHero.id}}</span> {{currentHero.name}}
     </a>

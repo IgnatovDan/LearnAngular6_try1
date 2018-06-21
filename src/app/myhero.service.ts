@@ -18,7 +18,9 @@ export class MyheroService {
   getHeroesAsync(): Observable<MyHero[]> {
     this.getHeroesAsyncCounter++;
     this.messageService.add(`> getHeroesAsync, call count: ${this.getHeroesAsyncCounter}`);
-    return of(HEROES);
+    const result = of(HEROES);
+    result.subscribe(() => this.messageService.add(`< getHeroesAsync, call count: ${this.getHeroesAsyncCounter}`));
+    return result;
   }
   // getHero(id: number) {
   //   return HEROES.find(item => item.id === id);
